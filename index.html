@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MotoVetores | Arquivos Digitais para Plotter e CorelDRAW</title>
+  <meta name="description" content="Catálogo de arquivos digitais vetoriais para motos, plotagem, recorte, CorelDRAW, Silhouette e comunicação visual." />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #070707;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: rgba(15, 15, 15, 0.95);
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo h1 {
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    .logo p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+    }
+
+    nav a {
+      color: #ddd;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #22c55e;
+    }
+
+    .hero {
+      padding: 90px 0;
+      background: linear-gradient(120deg, rgba(34, 197, 94, 0.18), transparent 55%);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      color: #22c55e;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .hero h2 {
+      font-size: clamp(38px, 7vw, 64px);
+      max-width: 780px;
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+
+    .hero h2 span {
+      color: #22c55e;
+    }
+
+    .hero p {
+      color: #b5b5b5;
+      max-width: 680px;
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      padding: 14px 24px;
+      border-radius: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: #22c55e;
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background: #4ade80;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #333;
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      border-color: #22c55e;
+      color: #22c55e;
+    }
+
+    .categorias {
+      padding: 34px 0 18px;
+    }
+
+    .categoria-lista {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    .categoria-lista a {
+      background: #111;
+      border: 1px solid #242424;
+      padding: 10px 18px;
+      border-radius: 999px;
+      white-space: nowrap;
+      color: #ddd;
+      transition: 0.3s;
+    }
+
+    .categoria-lista a:hover {
+      border-color: #22c55e;
+      color: #22c55e;
+    }
+
+    .section-title {
+      margin: 42px 0 28px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .section-title h3 {
+      font-size: 34px;
+    }
+
+    .section-title p {
+      color: #aaa;
+    }
+
+    .search-box {
+      background: #111;
+      border: 1px solid #292929;
+      color: white;
+      padding: 14px 16px;
+      border-radius: 14px;
+      width: 260px;
+      outline: none;
+    }
+
+    .search-box:focus {
+      border-color: #22c55e;
+    }
+
+    .grid-produtos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      padding-bottom: 80px;
+    }
+
+    .produto {
+      background: #111;
+      border: 1px solid #242424;
+      border-radius: 24px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .produto:hover {
+      border-color: #22c55e;
+      transform: translateY(-4px);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .produto-info {
+      padding: 18px;
+    }
+
+    .tag {
+      display: inline-block;
+      color: #22c55e;
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+
+    .produto h4 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .produto p {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .produto-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .preco {
+      color: #22c55e;
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .comprar {
+      background: #22c55e;
+      color: #000;
+      padding: 9px 14px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .comprar:hover {
+      background: #4ade80;
+    }
+
+    .beneficios {
+      background: rgba(20, 20, 20, 0.8);
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      padding: 60px 0;
+    }
+
+    .beneficios-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .beneficio {
+      background: #111;
+      border: 1px solid #242424;
+      border-radius: 22px;
+      padding: 26px;
+    }
+
+    .beneficio h4 {
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .beneficio p {
+      color: #aaa;
+    }
+
+    .aviso {
+      padding: 50px 0;
+    }
+
+    .aviso-box {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 22px;
+      padding: 28px;
+    }
+
+    .aviso-box h3 {
+      margin-bottom: 12px;
+      color: #22c55e;
+    }
+
+    .aviso-box p {
+      color: #ccc;
+    }
+
+    footer {
+      border-top: 1px solid #222;
+      padding: 34px 0;
+      color: #888;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-content strong {
+      color: #fff;
+    }
+
+    @media (max-width: 950px) {
+      .grid-produtos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .beneficios-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        display: none;
+      }
+
+      .grid-produtos {
+        grid-template-columns: 1fr;
+      }
+
+      .produto img {
+        height: 240px;
+      }
+
+      .search-box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <h1>MotoVetores</h1>
+        <p>Arquivos digitais para plotter e CorelDRAW</p>
+      </div>
+
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#beneficios">Vantagens</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container">
+        <span class="badge">Arquivos digitais profissionais</span>
+        <h2>Vetores para motos, <span>plotagem e recorte</span></h2>
+        <p>
+          Packs organizados para CorelDRAW, Plotter de Recorte, Silhouette,
+          Cricut e impressão. Compra segura pela plataforma e download imediato.
+        </p>
+
+        <div class="buttons">
+          <a href="#produtos" class="btn-primary">Ver Catálogo</a>
+          <a href="https://wa.me/5500000000000" target="_blank" class="btn-secondary">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <div class="container categoria-lista">
+        <a href="#produtos">Titan</a>
+        <a href="#produtos">Biz</a>
+        <a href="#produtos">XRE</a>
+        <a href="#produtos">Paredão</a>
+        <a href="#produtos">Plotter</a>
+        <a href="#produtos">Logos</a>
+        <a href="#produtos">Faixas</a>
+      </div>
+    </section>
+
+    <section id="produtos" class="container">
+      <div class="section-title">
+        <div>
+          <h3>Produtos em destaque</h3>
+          <p>Arquivos prontos para compra e download</p>
+        </div>
+        <input class="search-box" type="text" placeholder="Buscar vetores..." onkeyup="buscarProduto()" id="busca" />
+      </div>
+
+      <div class="grid-produtos" id="lista-produtos">
+        <article class="produto" data-nome="faixa titan 150 moto vetor corel">
+          <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop" alt="Faixa Titan 150 em vetor" />
+          <div class="produto-info">
+            <span class="tag">Motos</span>
+            <h4>Faixa Titan 150</h4>
+            <p>Arquivo digital vetorial para CorelDRAW, SVG, PDF e PNG.</p>
+            <div class="produto-bottom">
+              <span class="preco">R$ 7,90</span>
+              <a class="comprar" href="https://kiwify.com.br/SEU-LINK-AQUI" target="_blank">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto" data-nome="pack xre 300 adesivo faixa vetor">
+          <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?q=80&w=1200&auto=format&fit=crop" alt="Pack XRE 300 em vetor" />
+          <div class="produto-info">
+            <span class="tag">Adventure</span>
+            <h4>Pack XRE 300</h4>
+            <p>Modelos editáveis para adesivagem, recorte e personalização.</p>
+            <div class="produto-bottom">
+              <span class="preco">R$ 12,90</span>
+              <a class="comprar" href="https://kiwify.com.br/SEU-LINK-AQUI" target="_blank">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto" data-nome="biz 125 vetor adesivo moto corel">
+          <img src="https://images.unsplash.com/photo-1517846693594-1567da72af75?q=80&w=1200&auto=format&fit=crop" alt="Vetores Biz 125" />
+          <div class="produto-info">
+            <span class="tag">Scooter</span>
+            <h4>Vetores Biz 125</h4>
+            <p>Arquivos digitais para plotter, edição e produção de adesivos.</p>
+            <div class="produto-bottom">
+              <span class="preco">R$ 5,90</span>
+              <a class="comprar" href="https://kiwify.com.br/SEU-LINK-AQUI" target="_blank">Comprar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto" data-nome="pack paredão automotivo som vetor">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop" alt="Pack Paredão Automotivo" />
+          <div class="produto-info">
+            <span class="tag">Automotivo</span>
+            <h4>Pack Paredão</h4>
+            <p>Vetores automotivos para adesivos, logos e personalização.</p>
+            <div class="produto-bottom">
+              <span class="preco">R$ 14,90</span>
+              <a class="comprar" href="https://kiwify.com.br/SEU-LINK-AQUI" target="_blank">Comprar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="beneficios" class="beneficios">
+      <div class="container beneficios-grid">
+        <div class="beneficio">
+          <h4>Download imediato</h4>
+          <p>Após a aprovação da compra, o cliente recebe acesso ao arquivo digital.</p>
+        </div>
+
+        <div class="beneficio">
+          <h4>Arquivos organizados</h4>
+          <p>Produtos separados por pastas, formatos e modelos para facilitar o uso.</p>
+        </div>
+
+        <div class="beneficio">
+          <h4>Compatibilidade</h4>
+          <p>Ideal para CorelDRAW, Silhouette, Cricut, Illustrator e plotters.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="aviso">
+      <div class="container aviso-box">
+        <h3>Importante</h3>
+        <p>
+          Todos os produtos são arquivos digitais. Nenhum item físico será enviado.
+          O uso comercial é permitido para produção física, mas a revenda dos arquivos digitais não é autorizada.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <div class="container footer-content">
+      <div>
+        <strong>MotoVetores</strong>
+        <p>Catálogo digital de vetores automotivos, faixas e arquivos para plotagem.</p>
+      </div>
+      <p>© 2026 MotoVetores — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function buscarProduto() {
+      const busca = document.getElementById('busca').value.toLowerCase();
+      const produtos = document.querySelectorAll('.produto');
+
+      produtos.forEach(function(produto) {
+        const nome = produto.getAttribute('data-nome').toLowerCase();
+        produto.style.display = nome.includes(busca) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
